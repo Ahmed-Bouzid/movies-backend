@@ -5,7 +5,7 @@ router.get(
 	"/movies",
 	(req, res) => {
 		fetch(
-			`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.KEY}`
+			`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.NEXT_PUBLIC_KEY}`
 		)
 			.then((res) => res.json())
 			.then((data) => {
