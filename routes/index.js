@@ -1,6 +1,6 @@
 var express = require("express");
 var router = express.Router();
-let API_KEY = "aeaaa9d898f3645fbcb3c6df2b5ca5f7";
+let API_KEY = "process.env.API_KEY";
 const fetch = require("node-fetch");
 let movie = {};
 router.get(
